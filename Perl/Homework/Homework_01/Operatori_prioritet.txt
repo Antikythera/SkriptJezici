@@ -1,0 +1,12 @@
+Operatori imaju svoj prioritet.
+Tako da ce se izraz '2 ** 3 ** 4' evaluirati od pozadi.
+Prvo ce se izracunati '3 ** 4' = 81, pa ce taj rezultat dalje da se evaluira sa 2,
+'2 ** 81' = 2.41785163922926e+24
+
+Izraz '2 / 3 * 4' ce biti jednak 2.66666666666667. Deljenje ima veci prioritet od mnozenja,
+tako da ce se prvo izracunati '2 / 3' = 0.666666666666667. Nakon toga taj rezultat
+ce se pomnoziti sa 4 '0.666666666666667 * 4' = 2.66666666666667
+
+Izraz '2 + 3 * 4 ** 5 – 6' ce biti jednak 3068. Stepenovanje ovde ima najveci prioritet,
+tako da ce se prvo izracunati '4 ** 5' = 1024. Taj rezultat ce se potom pomnoziti sa 3 sto ce dati
+3072. I na kraju se vrsi sabiranje i oduzimanje po redu zapisa, '2 + 3072 - 6' = 3068.
