@@ -17,4 +17,9 @@ sub new {
   return bless($self, $class);
 }
 
+sub rideHorse {
+  my $self = shift;
+  printf "You are riding the horse %s.\n", $self->{name};
+}
+
 1;

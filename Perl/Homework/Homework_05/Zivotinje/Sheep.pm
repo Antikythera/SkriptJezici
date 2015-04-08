@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use strict;
-use Mammal;
-package Cow;
+use Animal;
+package Sheep;
 
 our @ISA = qw(Mammal);
 
@@ -9,11 +9,11 @@ sub new {
   my ($class) = shift;
   my $self = $class->SUPER::new($_[0]);
 
-  $self->{text} = "I am a cow.\n";
+  $self->{text} = "I am a sheep.\n";
   $self->{legs} = 4;
   $self->{food} = "Grass";
-  $self->{voice} = "Moo!";
-  $self->{product} = "Milk";
+  $self->{voice} = "Be-e-e-e-e!";
+  $self->{product} = "Wool";
 
   return bless($self, $class);
 }
