@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
 ### Lists
-
 fruit = [ 'orange', 'watermellon', 'grapes', 'banana' ]
 print fruit
 
