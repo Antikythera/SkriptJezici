@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
-### Lists
+# Lists
 fruit = [ 'orange', 'watermellon', 'grapes', 'banana' ]
 print fruit
 
-## Slicing lists
+# Slicing lists
 # print elements starting from 2 (excluding) till element 5
 print fruit[2:5]
 
@@ -12,10 +12,10 @@ print fruit[2:5]
 print fruit[3:]
 
 
-### Tuples
+# Tuples
 colors = ( 'blue', 'green', 'red' )
 
-## Slicing tuples
+# Slicing tuples
 # print elements starting from 1 (excluding) till element 3
 print colors[1:3]
 
@@ -23,7 +23,7 @@ print colors[1:3]
 print colors[2:]
 
 
-### Dictionaries
+# Dictionaries
 mydict = {
     'Color': 'blue',
     'Size': 'M',
