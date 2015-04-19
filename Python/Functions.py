@@ -75,4 +75,4 @@ print(str(fib(100)))
 
 ask_ok("Overwrite the file?", retries=2, complaint="Yes or No!"):
 
-print("%d - %d = %d" % (2123, 1231, subtract(2123, 1231)))
+    print("%d - %d = %d" % (2123, 1231, subtract(2123, 1231)))
