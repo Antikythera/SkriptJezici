@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/local/bin/python3
 
 
 class ListsAreDifferentSize(RuntimeError):
@@ -36,18 +36,18 @@ def recursive_list_add(listA, listB, index=0):
                 return _listA
 
     except ListsAreDifferentSize as exception:
-        print exception.message
+        print(exception.message)
 
 
-print "a * b = %d" % math(30, 2)
-print "a + b = %d" % math(2, 12)
+print("a * b = %d" % math(30, 2))
+print("a + b = %d" % math(2, 12))
 
 test_list = list(range(1, 20))
-print "Initial list: ", test_list
-print "After increment: ", list_increment(test_list)
+print("Initial list: ", test_list)
+print("After increment: ", list_increment(test_list))
 
 listA = [1, 2, 3]
 listB = [3, 2, 1]
-print "List A: %s" % listA
-print "List B: %s" % listB
-print "List %s + %s = %s" % (listA, listB, recursive_list_add(listA, listB))
+print("List A: %s" % listA)
+print("List B: %s" % listB)
+print("List %s + %s = %s" % (listA, listB, recursive_list_add(listA, listB)))
