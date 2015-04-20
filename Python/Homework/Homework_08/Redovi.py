@@ -2,6 +2,7 @@
 
 
 def is_number(s):
+    ''' most efficient way to check if value is a number, believe it or not '''
     try:
         float(s)
         return True
@@ -10,6 +11,8 @@ def is_number(s):
 
 
 def square(list):
+    ''' generator function that returns the next member each time next command
+        is applied '''
     for i in list:
         if is_number(i):
             yield int(i) ** 2
