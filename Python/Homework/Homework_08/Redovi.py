@@ -16,13 +16,14 @@ def square(list):
     for i in list:
         if is_number(i):
             yield int(i) ** 2
+        else:
+            return i
 
 
 input_file_path = './input.txt'
 output_file_path = './output.txt'
 
 if __name__ == '__main__':
-
     with open(input_file_path, 'r') as file:
         lines, lines_squared = [], []
 
