@@ -17,9 +17,9 @@ def square(list):
         if is_number(i):
             yield int(i) ** 2
 
+
 input_file_path = './input.txt'
 output_file_path = './output.txt'
-
 
 if __name__ == '__main__':
 
