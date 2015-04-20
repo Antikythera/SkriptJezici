@@ -26,7 +26,6 @@ output_file_path = './output.txt'
 if __name__ == '__main__':
     with open(input_file_path, 'r') as file:
         lines, lines_squared = [], []
-
         for line in file.read():
             lines.append(line)
 
