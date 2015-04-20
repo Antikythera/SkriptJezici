@@ -20,10 +20,9 @@ def square(list):
             yield i
 
 
-input_file_path = './input.txt'
-output_file_path = './output.txt'
-
 if __name__ == '__main__':
+    input_file_path = './input.txt'
+    output_file_path = './output.txt'
     with open(input_file_path, 'r') as file:
         lines, lines_squared = [], []
         for line in file.read():
