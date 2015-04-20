@@ -17,7 +17,7 @@ def square(list):
         if is_number(i):
             yield int(i) ** 2
         else:
-            return i
+            yield i
 
 
 input_file_path = './input.txt'
