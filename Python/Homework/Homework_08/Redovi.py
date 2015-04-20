@@ -10,7 +10,19 @@ def is_number(s):
         return False
 
 
-def square(list):
+def square(inlist):
+    retlist = []
+    for i in inlist:
+        if is_number(i):
+            squared_member = int(i) ** 2
+            retlist.append(str(squared_member))
+        else:
+            retlist.append(i)
+    return retlist
+
+
+def square_gen(list):
+    # TODO function always returns the first element when 'next' is called
     ''' generator function that returns the next member each time next command
         is applied '''
     for i in list:
@@ -29,9 +41,9 @@ if __name__ == '__main__':
         for line in file.read():
             lines.append(line)
 
-    for member in lines:
-        lines_squared.append(
-            next(square(lines))
-        )
-
+    lines_squared = square(lines)
     print(lines_squared)
+
+    with open(output_file_path, 'w') as file:
+        for line in lines_squared:
+            file.write(line)
