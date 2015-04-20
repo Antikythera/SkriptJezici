@@ -11,8 +11,8 @@ def is_number(s):
 
 
 def square(list):
-    ''' generator function that returns the next member each time next command
-        is applied '''
+    ''' generator function that acts like a list, you need to iterate through it
+        to get values '''
     for i in list:
         if is_number(i):
             yield str(int(i) ** 2)
