@@ -1,3 +1,4 @@
 *.tar.gz
+*.pyc
 testing.pl
-test.txt
+*.txt

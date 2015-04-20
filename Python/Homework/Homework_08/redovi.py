@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
     for i in square(lines):
         lines_squared.append(i)
-    print("Squared numbers.l")
+    print("Squared all numbers.")
 
     with open(output_file_path, 'w') as file:
         for line in lines_squared:
