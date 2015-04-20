@@ -31,6 +31,8 @@ if __name__ == '__main__':
             lines.append(line)
 
     for member in lines:
-        lines_squared.append(next(square(lines)))
+        lines_squared.append(
+            next(square(lines))
+        )
 
     print(lines_squared)
