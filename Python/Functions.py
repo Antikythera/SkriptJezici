@@ -54,7 +54,7 @@ def subtract(a, b):
     """
     Returns result of a - b subtraction, also exploring some print formating
     """
-    print "SUBTRACTING %d - %d" % (a, b)
+    print("SUBTRACTING %d - %d" % (a, b))
     return a - b
 
 
@@ -73,6 +73,6 @@ print("Value of total: " + str(sum(10, 20)))
 
 print(str(fib(100)))
 
-ask_ok("Overwrite the file?", retries=2, complaint="Yes or No!"):
+ask_ok("Overwrite the file?", retries=2, complaint="Yes or No!")
 
-    print("%d - %d = %d" % (2123, 1231, subtract(2123, 1231)))
+print("%d - %d = %d" % (2123, 1231, subtract(2123, 1231)))
