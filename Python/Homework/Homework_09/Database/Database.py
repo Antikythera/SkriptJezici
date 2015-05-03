@@ -6,7 +6,7 @@ from mysql.connector import errorcode
 
 try:
     cnx = mysql.connector.connect(user='root',
-                                  password='kotoryu90s',
+                                  password='',
                                   host='127.0.0.1',
                                   database='people')
 
