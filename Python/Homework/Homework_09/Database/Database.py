@@ -23,4 +23,5 @@ except mysql.connector.Error as err:
     else:
         print(err)
 finally:
-    cnx.close()
+    if cnx:
+        cnx.close()
