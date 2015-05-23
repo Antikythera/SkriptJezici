@@ -41,6 +41,19 @@ class Box
 
   private :my_private
 
+  # Scalar operations with objects
+  def +(other)
+    Box.new(@width + other.width, @heigth + other.heigth)
+  end
+
+  def -@
+    Box.new(-@width, -@heigth)
+  end
+
+  def *(scalar)
+    Box.new(@width * scalar, @heigth * scalar)
+  end
+
 end
 
 # instantiating a class
@@ -73,3 +86,6 @@ end
 
 big_box = BigBox.new(10, 20)
 big_box.print_area
+
+box3 = box2 + big_box
+puts box3
