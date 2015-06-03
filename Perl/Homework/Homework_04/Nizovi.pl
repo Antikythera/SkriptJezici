@@ -10,6 +10,8 @@ sub min {
 }
 
 sub zip {
+  # $a_ref is a pointer to the array.
+  # shift in this context unloads the arguments passed to the function
   my $a_ref = shift;
   my $b_ref = shift;
   my @a = @{$a_ref};
