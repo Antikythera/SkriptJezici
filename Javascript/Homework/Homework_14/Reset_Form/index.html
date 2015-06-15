@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="javascript.js" charset="utf-8"></script>
+  </head>
+
+    <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+      <p>
+        <span>Name:</span><input type="text" name="fname" value="">
+      </p>
+      <p>
+        <span>Email:</span><input type="text" name="fEmail" value="">
+      </p>
+      <p>
+        <span>Age:</span><input type="text" name="fAge" value="">
+      </p>
+      <input type="submit" value="Submit">
+      <button type="button" name="btnReset" onclick="resetForm('myForm')">Reset form</button>
+    </form>
+
+  </body>
+</html>
