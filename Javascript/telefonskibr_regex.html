@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Telefonski brojevi regex check</title>
+    <script type="text/javascript">
+
+      var re = /\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
+
+      function testInfo(telUlazID){
+        var tel = document.getElementById(telUlazID).value;
+        var OK = re.exec(tel);
+        if (!OK) {
+          window.alert(RegExp.input + " nije ispravan telefon!");
+        } else {
+          window.alert("Hvala, vaš telefonski broj je " + OK[0]);
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+  <p>Unesite broj telefona (sa kodom za grad) i zatim kliknite "Proveri".
+      <br>Očekivani format je ###-###-####.
+  </p>
+
+  <form action="#">
+    <input type="text" id="tel" value="">
+    <button onclick="testInfo('tel');">Proveri</button>
+  </form>
+
+  </body>
+</html>
