@@ -6,5 +6,6 @@ The languages I will be working with:
 * Perl
 * Python
 * Ruby
+* JavaScript
 
 Each language will have homeworks section.
